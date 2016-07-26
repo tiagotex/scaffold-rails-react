@@ -1,24 +1,23 @@
-# README
+# Sample App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is used to bootstrap small project.
 
-Things you may want to cover:
+It uses a Rails as a JSON API and React for frontend.
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+### How to start app
 
-* Database creation
+Copy .env.example file to .env, update the value for the database url
 
-* Database initialization
+Create database
 
-* How to run the test suite
+    rails db:create db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+Start rails app
 
-* Deployment instructions
+    bundle exec rails s
 
-* ...
+Start react app
+
+    cd client/ && gulp
